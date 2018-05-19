@@ -1,16 +1,16 @@
 # crystal-blockchain
 
-Basic blockchain implemtation with using crystal. Can read chain data and post new blocks through http requests.
+Basic blockchain implemtation using crystal. Can read chain data and post new blocks through http requests.
 
 ## Installation
 
-Run `shards` to get the dependencies:
-``` shards ```
+Run `shards` to get the dependencies
 
 ## Usage
 
-GET full blockchain
-POST new blocks to chain
+- GET full blockchain
+
+- POST new blocks to chain
 
 ## Contributing
 
@@ -22,4 +22,4 @@ POST new blocks to chain
 
 ## Contributors
 
-- [[Bradford-Hamilton]](https://github.com/bradford-hamilton) Bradford Lamson-Scribner - creator, maintainer
+- [Bradford-Hamilton](https://github.com/bradford-hamilton) Bradford Lamson-Scribner - creator, maintainer
