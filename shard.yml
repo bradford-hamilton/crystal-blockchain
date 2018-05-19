@@ -1,0 +1,17 @@
+name: crystal-blockchain
+version: 0.1.0
+
+authors:
+  - Bradford Lamson-Scribner <brad.lamson@gmail.com>
+
+targets:
+  crystal-blockchain:
+    main: src/crystal-blockchain.cr
+
+crystal: 0.24.2
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
