@@ -1,9 +1,11 @@
-class Block
-  def self.difficulty
+module Block
+  extend self
+
+  def difficulty
     3
   end
 
-  def self.create(index, timestamp, data, prev_hash)
+  def create(index, timestamp, data, prev_hash)
     block = {
       index: index,
       timestamp: timestamp,
@@ -16,13 +18,7 @@ class Block
     block.merge({ hash: self.calculate_hash(block) })
   end
 
-  def self.calculate_hash(string)
-    sha256 = OpenSSL::Digest.new("SHA256")
-    sha256.update(string)
-    sha256.to_s
-  end
-
-  def self.calculate_hash(block)
+  def calculate_hash(block)
     plain_text = "
       #{block[:index]}
       #{block[:timestamp]}
@@ -35,12 +31,12 @@ class Block
     sha256.to_s
   end
 
-  def self.is_hash_valid?(hash, difficulty)
+  def is_hash_valid?(hash, difficulty)
     prefix = "0" * difficulty
     hash.starts_with?(prefix)
   end
 
-  def self.generate(last_block, data)
+  def generate(last_block, data)
     new_block = self.create(
       last_block[:index] + 1,
       Time.now.to_s,
@@ -69,7 +65,7 @@ class Block
     new_block
   end
 
-  def self.is_valid?(new_block, old_block)
+  def is_valid?(new_block, old_block)
     if old_block[:index] + 1 != new_block[:index]
       return false 
     elsif old_block[:hash] != new_block[:prev_hash]
