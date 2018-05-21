@@ -4,14 +4,14 @@ require "openssl"
 require "./Block"
 
 module Crystal::Blockchain
-  logger = Kemal::LogHandler.new
-
   blockchain = [] of NamedTuple(
     index: Int32,
     timestamp: String,
     data: String,
     hash: String,
-    prev_hash: String
+    prev_hash: String,
+    difficulty: Int32,
+    nonce: String
   )
 
   # create genesis block
@@ -28,7 +28,9 @@ module Crystal::Blockchain
 
     if Block.is_valid?(new_block, blockchain[blockchain.size - 1])
       blockchain << new_block
-      logger.write("\n#{new_block}\n\n")
+      puts "\n"
+      p new_block
+      puts "\n"
     end
 
     new_block.to_json
