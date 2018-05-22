@@ -1,6 +1,5 @@
 require "./crystal-blockchain/*"
 require "kemal"
-require "openssl"
 require "./Block"
 
 module Crystal::Blockchain
