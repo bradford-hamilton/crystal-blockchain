@@ -15,7 +15,7 @@ module Crystal::Blockchain
   )
 
   # create genesis block
-  blockchain << Block.create(0, Time.now.to_s, "Gensis block's data!", "")
+  blockchain << Block.create(0, Time.now.to_s, "Genesis block's data!", "")
 
   get "/" do
     blockchain.to_json
