@@ -1,8 +1,8 @@
-# Crystal Blockchain Tutorial
+# Blockchain Tutorial
 
 Source code for tutorial I published on Medium.
 
-- [Write your own blockchain and PoW algorithm using Crystal](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52)
+Link to blog post: [Write your own blockchain and PoW algorithm using Crystal](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52)
 
 ## Installation
 
