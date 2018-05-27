@@ -1,6 +1,8 @@
-# crystal-blockchain
+# Crystal Blockchain Tutorial
 
-Source code for tutorial: [Write your own blockchain and PoW algorithm using Crystal](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52)
+Source code for tutorial I published on Medium.
+
+- [Write your own blockchain and PoW algorithm using Crystal](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52)
 
 ## Installation
 
@@ -9,7 +11,6 @@ Run `shards` to get the dependencies
 ## Usage
 
 - GET full blockchain
-
 - POST new blocks to chain
 
 ## Contributing
