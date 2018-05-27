@@ -1,6 +1,6 @@
 # crystal-blockchain
 
-Basic blockchain implemtation using crystal. Can read chain data and post new blocks through http requests.
+Source code for tutorial: [Write your own blockchain and PoW algorithm using Crystal](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52)
 
 ## Installation
 
