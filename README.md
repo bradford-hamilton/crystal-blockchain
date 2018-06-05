@@ -6,6 +6,23 @@ Source code for [tutorial on Medium](https://medium.com/@bradford_hamilton/write
 
 Run `shards` to get the dependencies
 
+## Run Locally
+
+`crystal src/blockchain.cr`
+Go to `http://localhost:3000` in your browser.
+
+## Run with Docker
+
+Run `docker build -t tag_name_of_your_choosing .`
+Run `docker container run -d -p 3000:3000 tag_name_of_your_choosing crystal src/crystal-blockchain.cr`
+Go to `http://localhost:3000` in your browser.
+
+Clean up: 
+  - Run `docker ps -a`
+  - Copy the CONTAINER ID from your running process
+  - Run `docker container rm -f CONTAINER ID`
+  - Run `docker image rm tag_name_of_your_choosing`
+
 ## Usage
 
 - GET full blockchain
