@@ -8,14 +8,14 @@ Run `shards` to get the dependencies
 
 ## Run Locally
 
-`crystal src/blockchain.cr`
-Go to `http://localhost:3000` in your browser.
+  - Run `crystal src/blockchain.cr`
+  - Go to `http://localhost:3000` in your browser.
 
 ## Run with Docker
 
-Run `docker build -t tag_name_of_your_choosing .`
-Run `docker container run -d -p 3000:3000 tag_name_of_your_choosing crystal src/crystal-blockchain.cr`
-Go to `http://localhost:3000` in your browser.
+  - Run `docker build -t tag_name_of_your_choosing .`
+  - Run `docker container run -d -p 3000:3000 tag_name_of_your_choosing crystal src/crystal-blockchain.cr`
+  - Go to `http://localhost:3000` in your browser.
 
 Clean up: 
   - Run `docker ps -a`
