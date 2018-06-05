@@ -1,11 +1,8 @@
 FROM crystallang/crystal
 MAINTAINER Bradford Lamson-Scribner <brad.lamson@gmail.com>
 
-ENV INSTALL_PATH /app
-RUN mkdir -p $INSTALL_PATH
-
-WORKDIR $INSTALL_PATH
-
+RUN mkdir -p /app
+WORKDIR /app
 COPY . .
 
 EXPOSE 3000
