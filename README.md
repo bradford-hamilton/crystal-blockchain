@@ -20,7 +20,7 @@ Run `shards` to get the dependencies
 Clean up: 
   - Run `docker ps -a`
   - Copy the CONTAINER ID from your running process
-  - Run `docker container rm -f CONTAINER ID`
+  - Run `docker container rm -f <CONTAINER ID>`
   - Run `docker image rm tag_name_of_your_choosing`
 
 ## Usage
