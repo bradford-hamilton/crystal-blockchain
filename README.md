@@ -1,6 +1,6 @@
 # Write your own blockchain and PoW algorithm using Crystal
 
-Source code for [tutorial on Medium](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52).
+Source code for a [tutorial on Medium](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52) I recently published.
 
 ## Installation
 
