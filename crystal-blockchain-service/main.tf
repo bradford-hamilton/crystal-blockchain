@@ -65,8 +65,7 @@ resource "aws_nat_gateway" "gw" {
   allocation_id = "${element(aws_eip.gw.*.id, count.index)}"
 }
 
-# Create a new route table for the private subnets
-# Make it route non-local traffic through the NAT gateway to the internet
+# Create a new route table for the private subnets, make it route non-local traffic through the NAT gateway to the internet
 resource "aws_route_table" "private" {
   count  = "${var.az_count}"
   vpc_id = "${aws_vpc.main.id}"
@@ -88,8 +87,7 @@ resource "aws_route_table_association" "private" {
 ############ Security ############
 ##################################
 
-# ALB Security Group
-# This is the group to edit to restrict access to the application
+# ALB Security Group: Edit this to restrict access to the application
 resource "aws_security_group" "lb" {
   name        = "tf-ecs-alb"
   description = "controls access to the ALB"
@@ -179,15 +177,15 @@ resource "aws_ecs_task_definition" "app" {
   container_definitions = <<DEFINITION
   [
     {
-      "cpu": ${var.fargate_cpu},
+      "cpu": "${var.fargate_cpu}",
       "image": "${var.app_image}",
-      "memory": ${var.fargate_memory},
+      "memory": "${var.fargate_memory}",
       "name": "app",
       "networkMode": "awsvpc",
       "portMappings": [
         {
-          "containerPort": ${var.app_port},
-          "hostPort": ${var.app_port}
+          "containerPort": "${var.app_port}",
+          "hostPort": "${var.app_port}"
         }
       ]
     }
