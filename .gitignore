@@ -2,10 +2,3 @@
 /lib/
 /bin/
 /.shards/
-
-# Compiled files
-*.tfstate
-*.tfstate.backup
-
-# Module directory
-.terraform/
