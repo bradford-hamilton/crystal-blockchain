@@ -14,7 +14,7 @@ Run `shards` to get the dependencies
 ## Run with Docker
 
   - Run `docker build -t image_name_of_your_choosing:latest .`
-  - Run `docker container run -d -p 3000:3000 image_name_of_your_choosing ./crystal-blockchain`
+  - Run `docker container run -d -p 3000:3000 image_name_of_your_choosing`
   - Go to `http://localhost:3000` in your browser.
 
 Clean up: 

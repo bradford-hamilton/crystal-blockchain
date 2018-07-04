@@ -6,3 +6,5 @@ COPY . .
 RUN crystal build src/crystal-blockchain.cr
 
 EXPOSE 3000
+
+CMD ./crystal-blockchain
