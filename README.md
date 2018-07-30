@@ -1,6 +1,6 @@
 # Write your own blockchain and PoW algorithm using Crystal
 
-Source code for a [tutorial on Medium](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52) I recently published.
+Source code for a [tutorial on Medium](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52) I published.
 
 ## Installation
 
@@ -17,7 +17,7 @@ Run `shards` to get the dependencies
   - Run `docker container run -d -p 3000:3000 image_name_of_your_choosing`
   - Go to `http://localhost:3000` in your browser.
 
-Clean up: 
+Clean up:
   - Run `docker ps -a`
   - Copy the CONTAINER ID from your running process
   - Run `docker container rm -f <CONTAINER ID>`
