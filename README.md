@@ -18,7 +18,7 @@ Run `shards` to get the dependencies
   - Go to `http://localhost:3000` in your browser.
 
 Clean up:
-  - Run `docker ps -a`
+  - Run `docker container ls`
   - Copy the CONTAINER ID from your running process
   - Run `docker container rm -f <CONTAINER ID>`
   - Run `docker image rm image_name_of_your_choosing`
